@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('NiceAdmin.index');
 });
+
+Route::get('widgets', function () {
+    return view('NiceAdmin.widgets');
+});
+
+Route::get('Widgets', 'WidgetsController@index');
